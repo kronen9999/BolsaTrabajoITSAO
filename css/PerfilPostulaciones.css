@@ -1,0 +1,339 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(to top,#c7c7c9,#ffffff);
+    overflow-x: hidden;
+    animation-name: animacionEntrada;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+header{
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(176, 221, 0);
+    box-shadow:0px 0px 20px  5px  rgb(85, 85, 85) ;
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+    z-index: 100;
+
+}
+header p{
+    color: rgb(255, 255, 255);
+    position: fixed;
+    left: 100px;
+    top: 20px;
+    font-size: 22px;
+}
+header nav{
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+header img{
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    z-index: 20;
+}
+
+header nav ul{
+    display:flex;
+    margin-right: 50px;
+    list-style: none;
+}
+header nav ul li a,header nav ul li p{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+    margin-left:20px;
+    margin-right: 100px;
+    transition-property: color;
+    transition-duration: 1s;
+}
+header nav ul li a:hover{
+    color:rgb(0, 0, 0);
+    
+}
+
+
+
+
+
+[id="btnMenu"]:hover{
+    cursor:pointer;
+    color:rgb(0, 0, 0);
+    }
+    
+    [id="btnMenu"]
+    {
+        
+        background-color: transparent;
+        border: none;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        transition-property: text-shadow color;
+        transition-duration: 1s;
+        
+    }
+    
+    
+    
+    
+
+[id="menuDesplegable"]{
+    width: 300px; 
+    padding: 20px;  
+   background:  rgb(176, 221, 0);
+    position:fixed;
+    left:1000px;
+    top: 75px;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgb(104, 104, 104);
+    z-index:-1;
+    opacity: 0;
+    
+}
+
+[id="menuDesplegable"] div{
+    height: 27px !important;
+    width: 250px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    box-shadow: 2px 2px 10px 2px rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    padding: 15px;
+    transition: transform;
+    transition-duration:1s;
+    transform: scale(1);
+}
+
+[id="menuDesplegable"] div:hover{
+transform: scale(1.1);
+}
+
+[id="menuDesplegable"] div  a{
+font-size: 17px !important;
+color: white;
+    text-decoration: none;
+    margin-right: 0px !important;
+    width: 200px;
+
+
+}
+
+[mensajeUsuario="Usuario"]{
+margin-top: 10px;
+margin-bottom: 10px;
+font-size: 20px;
+color: white !important;
+}
+
+
+
+
+[id="menuDesplegable"] div a img{
+    width: 40px !important;
+    height: 40px !important;
+    margin-left: 80px !important;
+   
+}
+
+[alt="imgSesionMenu"]{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+
+}
+
+[linea="divisora"]{
+    width:  270px !important;
+    height: 0px !important;
+    border: 1px solid rgb(102, 102, 102);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+    
+    
+
+[href="views/InicioSesionCandidatos.php"]
+{
+    border-bottom: 2px solid white;
+    width: 127px;
+    
+    
+}
+
+
+footer{
+    width:100vw;
+    height: 100px;
+    
+    background-color: rgb(176, 221, 0);
+    box-shadow:0px 0px 20px  5px  rgb(85, 85, 85) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .divfooter_p{
+color: rgb(255, 255, 255);font-size: 15px;
+}
+    
+footer .divfooter_img {
+    display: flex;
+}
+
+footer .divfooter_img img{
+    margin-top: 10px;
+    width: 35px ;
+    height: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+[alt="imgSesion"]{
+    position:absolute;
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    left:1250px;
+    top:10px;
+    box-shadow: 0px 0px 10px white;
+}
+
+.seccionPostulacionesN{
+    
+width: 100vw;
+height: 579px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.seccionPostulacionesN img{
+    width: 200px;
+    height: 400px;
+    margin-bottom: 30px;
+}
+
+.seccionPostulacionesN p{
+    font-size: 30px !important;
+    text-align: center;
+    color: #2e2e2e;
+}
+
+.seccionPostulaciones{
+    width: 100vw;
+    height: 579px;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorPostulaciones{
+    width: 800px;
+   height: 400px;
+   
+    margin-top:120px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding:20px;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 10px 0px 30px 2px  rgb(54, 54, 54);
+}
+
+.InformacionPostulaciones{
+    width: 440px;
+    height: 440px;
+    margin-top:120px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 10px 0px 30px 2px  rgb(54, 54, 54);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.InformacionPostulaciones p{
+    font-size: 20px;
+    color:#2e2e2e;
+    text-align: center;
+}
+
+.Postulacion{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 20px;
+    min-height: 40px;
+    max-height: 70px;
+    border-radius: 20px;
+    border: 1px solid black;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.Postulacion img{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 20px;
+    border: 1px solid black;
+}
+
+.Postulacion div{
+    margin-left: 30px;
+}
+
+.Postulacion div p{
+    text-align: center;
+}
+
+#imgAdvertencia{
+    width: 150px;
+    height: 150px;
+}
+
+.InformacionPostulaciones div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#mensajeCita{
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    width: 100%;
+    font-size: 20px !important;
+    width: 320px;
+}

@@ -1,0 +1,305 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+
+body{
+    background:linear-gradient(to top,#c7c7c9,#ffffff);
+}
+
+[animacionEntradapag="1"]
+{
+   animation-name: animacionEntrada;
+   animation-duration: 2s;
+   animation-iteration-count: 1s;
+}
+
+@keyframes animacionEntrada {
+
+   from{
+    opacity: 0;
+   }to{
+opacity: 1;
+   }
+  }
+  nav p{
+    color: rgb(255, 255, 255);
+    position: fixed;
+    left: 100px;
+    top: 20px;
+    font-size: 22px;
+}
+
+body nav{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    background-color: rgb(176, 221, 0);
+    box-shadow:0px 0px 20px  5px  rgb(85, 85, 85) ;
+ }
+ body nav ul{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    height: 10vh;
+    list-style: none;
+    font-size: 18px;
+    align-items: center;
+    list-style: none;
+    
+ }
+
+ body nav ul li{
+margin-right: 20px;
+margin-left: 20px;
+height: 10vh;
+display: flex;
+align-items: center;
+color: black !important;
+text-shadow: 0px 0px 10px #ffffff00;
+transition:color 1s;
+
+ }
+
+ body nav ul li:hover{
+  color: rgb(0, 0, 0);
+ }
+
+ body nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255) !important;
+    transition: color 1s;
+    
+    
+ }
+
+ body nav ul li a:hover{
+  color: rgb(0, 0, 0) !important;
+  
+  
+}
+
+ #contenedor{
+    height: 89vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+
+ [name="btnAlta"],[value="Cancelar"]
+ {
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+ background: rgb(0, 0, 0);
+ color: rgb(255, 255, 255);
+ }
+
+
+ #contenedor_form{
+    width: 30vw;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;  
+    background: transparent;
+    transition-property: border box-shadow;
+    border: 1px solid transparent;
+    transition-duration: 1.5s;
+    opacity: 1;
+    box-shadow: 10px 10px 30px 10px rgb(126, 125, 125);
+    color: black;
+    
+ }
+
+ #contenedor_form:hover{
+  border:10px solid black;
+  box-shadow:0px 0px 0px 0px rgba(126, 125, 125, 0) ;
+ }
+
+ 
+
+ [alt="iconoCandidatos"]
+ {
+   margin-top: 5vh;
+   margin-bottom: 5vh;
+   width: 150px;
+   height: 150px;
+   filter: drop-shadow(0px 0px 2px white);
+ }
+
+ [alt="iconoAltacandidatos"]{
+  margin-top: 5vh;
+   margin-bottom: 5vh;
+   width: 150px;
+   height: 150px;
+   filter: drop-shadow(0px 0px 2px white);
+ }
+
+
+ #contenedor_form p{
+   font-size: 17px;
+   margin-top:3vh;
+ }
+
+ [type="text"],[type="password"]{
+   border: none;
+   margin-top: 1vh;
+   width: 300px;
+   height: 30px;
+   font-size: 17px;
+   color: black;
+   border-bottom: 1px solid rgb(0, 0, 0);
+   background-color: transparent;
+   transition-property: transform  color;
+  transition-duration: .5s;
+  
+
+ }
+
+ [type="submit"],[value="Cancelar"]
+ {
+   margin-top: 2vh;
+   width: 150px;
+   height: 40px;
+   font-size: 15px;
+   background-color: #000000;
+   border-radius: 30px;
+   border: none;
+   color: white !important;
+ }
+
+
+
+
+ [type="text"]:active,[type="password"]:active{
+  border:none;
+  color: white !important;
+ }
+
+ [type="submit"]:hover,[value="Cancelar"]:hover{
+  animation-name: animacionbtn;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 1s;
+ }
+
+ @keyframes animacionbtn {
+  0%{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  35%{
+    background: black;
+    color: white;
+  }
+  70%{
+    background: black;
+    color: white;
+  }
+  100%{
+    background: white;
+    color: black;
+  }
+  
+  
+ }
+
+ 
+
+
+ @keyframes animacionForm{
+  from {
+opacity: 0;
+  }
+  to{
+  opacity: 1;
+  }
+
+ }
+
+ [animacionActiva="Si"]{
+animation-name: animacionForm;
+animation-duration: 2s;
+animation-iteration-count: 1;
+ }
+
+ [type="text"]:hover,[type="password"]:hover{
+  
+  transform: scale(1.1);
+ }
+
+ .ojoAbierto,.ojoCerrado
+ {
+width: 30px;
+height: 30px;
+position:absolute;
+left:850px;
+z-index: 10000;
+top: 490px;
+filter: drop-shadow(0px 0px 1px white);
+}
+
+[style="color:#00fff2"]{
+  font-size: 10px;
+}
+
+
+#contenedor_form_alta{
+  width: 50vw;
+    height: 60vh;
+    border: 1px solid rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;  
+    background: transparent ;
+    box-shadow: 10px 10px 30px 10px rgb(126, 125, 125);
+    transition-property: border box-shadow;
+    transition-duration: 1.5s;
+    opacity: 1;
+}
+
+#contenedor_form_alta:hover{
+  border :10px solid black;
+  box-shadow: 0px 0px 0px 0px #f5f5f500;
+}
+
+
+#contenedor_form_alta p{
+  font-size: 17px;
+  margin-top:3vh;
+}
+
+
+#contenedor_form_alta_divp{
+  display: flex;
+  padding-top:20px;
+}
+[id="contenedor_form_alta"] h2{
+  margin-top: 20px;
+}
+
+#contenedor_form_alta_div1{
+margin-left: 20px;
+display: flex;
+justify-items: center;
+align-items: center;
+flex-direction: column;
+margin-right: 20px;
+
+}
+
+
+
+[href="InicioSesionCandidatos.php"]{
+  margin-left: 40px;
+}
